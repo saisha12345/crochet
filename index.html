@@ -6,6 +6,108 @@
   <title>Saisha's Crochet Corner</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Comfortaa&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comfortaa', sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background-color: #d8f3dc;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 4px dotted #b7e4c7;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      color: #4c1c73;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #4c1c73;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff85a1;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      color: #4c1c73;
+      margin-bottom: 1.5rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product {
+      background-color: #fff0f6;
+      border-radius: 1.5rem;
+      padding: 1rem;
+      box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 0.75rem;
+    }
+
+    .product h3 {
+      margin-top: 1rem;
+      color: #4c1c73;
+    }
+
+    .product p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    .product button {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1.2rem;
+      background-color: #ff9e9e;
+      border: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 0.75rem;
+      cursor: pointer;
+    }
+
+    .product button:hover {
+      background-color: #e76f51;
+    }
+
+    footer {
+      background-color: #d8f3dc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 2px dotted #b7e4c7;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,13 +122,33 @@
 
   <section id="shop">
     <h2>Shop Crochet Items</h2>
-    <div id="product-list" class="product-grid"></div>
+    <div id="product-list" class="product-grid">
+      <div class="product">
+        <img src="images/bunny.jpg" alt="Crochet Bunny">
+        <h3>Crochet Bunny</h3>
+        <p>Handmade with soft yarn, perfect for cuddles!</p>
+        <p><strong>$15.00</strong></p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/coasters.jpg" alt="Flower Coaster Set">
+        <h3>Flower Coaster Set</h3>
+        <p>A colorful set of 4 coasters shaped like flowers.</p>
+        <p><strong>$10.00</strong></p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/strawberry.jpg" alt="Strawberry Keychain">
+        <h3>Strawberry Keychain</h3>
+        <p>An adorable accessory for your keys or bag</p>
+        <p><strong>$8.00</strong></p>
+        <button>Buy Now</button>
+      </div>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Saisha's Crochet Corner</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
